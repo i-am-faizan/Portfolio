@@ -17,7 +17,7 @@ export default function Footer() {
     { href: getMailtoUrl(), label: "Email", icon: Mail },
   ];
   return (
-    <footer className="bg-surface px-6 pt-14 md:px-14">
+    <footer className="bg-surface px-4 pt-10 sm:px-6 md:px-14 overflow-hidden">
       <div className="mx-auto max-w-5xl">
         <div className="flex flex-col justify-between gap-10 border-b border-ink/[0.08] pb-12 sm:flex-row">
           <div className="max-w-xs">

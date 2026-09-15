@@ -19,7 +19,7 @@ export default function Experience() {
   });
 
   return (
-    <section id="experience" className="bg-surface px-6 py-20 md:px-14 md:py-28">
+    <section id="experience" className="bg-surface px-4 py-14 sm:px-6 md:px-14 md:py-28 overflow-hidden">
       <div className="mx-auto max-w-4xl">
         <FadeIn>
           <Badge>Experience</Badge>

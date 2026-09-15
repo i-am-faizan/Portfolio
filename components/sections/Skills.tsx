@@ -20,7 +20,7 @@ export default function Skills() {
   const [openId, setOpenId] = useState<string>("");
 
   return (
-    <section id="skills" className="bg-surface px-6 py-20 md:px-14 md:py-28">
+    <section id="skills" className="bg-surface px-4 py-14 sm:px-6 md:px-14 md:py-28 overflow-hidden">
       <div className="mx-auto max-w-5xl">
         <FadeIn>
           <Badge>Skills</Badge>

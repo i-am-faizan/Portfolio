@@ -29,7 +29,7 @@ export default function Hero() {
 
       {/* Outer Hero Card Container */}
       <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[26px] border border-ink/10 bg-surface/90 shadow-[0_20px_50px_-20px_rgba(106,75,214,0.12)] backdrop-blur-md md:rounded-[36px]">
-        
+
         {/* Subtle grid pattern background */}
         <div className="pointer-events-none absolute inset-0 opacity-[0.03] bg-[radial-gradient(#0c0a18_1px,transparent_1px)] [background-size:24px_24px]" />
 
