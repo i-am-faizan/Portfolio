@@ -42,7 +42,7 @@ export default function Projects() {
       <div className="mx-auto max-w-[1500px] grid grid-cols-1 lg:grid-cols-12 min-h-screen">
         
         {/* Left Sticky Sidebar Column (lg:col-span-4 or 5) */}
-        <div className="lg:col-span-4 xl:col-span-4 border-b lg:border-b-0 lg:border-r border-ink/10 p-6 sm:p-8 lg:p-12 flex flex-col justify-between bg-surface/50 backdrop-blur-xs lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)] lg:self-start">
+        <div className="lg:col-span-4 xl:col-span-4 border-b lg:border-b-0 lg:border-r border-ink/10 p-6 sm:p-8 lg:p-12 flex flex-col justify-between bg-surface/50 backdrop-blur-xs lg:sticky lg:top-24 lg:h-[calc(100vh-7rem)] lg:self-start overflow-y-auto modal-scrollbar">
           <div className="space-y-6">
             {/* Blueprint Eyebrow Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/5 px-3.5 py-1 font-mono text-[12px] font-semibold text-violet-600 uppercase tracking-wider">
