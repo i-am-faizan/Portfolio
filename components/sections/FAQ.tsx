@@ -12,7 +12,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-surface px-4 py-14 sm:px-6 md:px-14 md:py-28 overflow-hidden">
+    <section className="bg-surface px-6 py-20 md:px-14 md:py-28">
       <div className="mx-auto max-w-3xl">
         <FadeIn>
           <Badge>Working together</Badge>

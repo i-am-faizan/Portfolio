@@ -33,7 +33,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative w-full border-t border-b border-ink/10 bg-surface overflow-hidden"
+      className="relative w-full border-t border-b border-ink/10 bg-surface"
     >
       {/* Ambient background aura */}
       <div className="pointer-events-none absolute left-1/4 top-1/3 -z-10 h-[600px] w-[600px] -translate-y-1/2 rounded-full bg-violet-400/10 blur-[140px]" />

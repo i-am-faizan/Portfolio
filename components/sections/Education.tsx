@@ -6,7 +6,7 @@ import { education, certifications } from "@/data/education";
 
 export default function Education() {
   return (
-    <section className="bg-surface px-4 pb-14 sm:px-6 md:px-14 md:pb-28 overflow-hidden">
+    <section className="bg-surface px-6 pb-20 md:px-14 md:pb-28">
       <div className="mx-auto max-w-4xl">
         <FadeIn>
           <Badge>Education</Badge>
