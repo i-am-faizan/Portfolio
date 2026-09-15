@@ -42,8 +42,8 @@ export default function Projects() {
       <div className="mx-auto max-w-[1500px] grid grid-cols-1 lg:grid-cols-12 min-h-screen">
         
         {/* Left Sticky Sidebar Column */}
-        <div className="lg:col-span-4 xl:col-span-4 border-b lg:border-b-0 lg:border-r border-ink/10 p-6 sm:p-8 lg:p-10 flex flex-col justify-between bg-surface/50 backdrop-blur-xs lg:sticky lg:top-20 lg:h-[calc(100vh-5rem)] lg:self-start">
-          <div className="space-y-5">
+        <div className="lg:col-span-4 xl:col-span-4 border-b lg:border-b-0 lg:border-r border-ink/10 p-6 sm:p-8 lg:p-10 flex flex-col gap-6 bg-surface/50 backdrop-blur-xs lg:sticky lg:top-24 lg:self-start">
+          <div className="space-y-4">
             {/* Blueprint Eyebrow Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/5 px-3.5 py-1 font-mono text-[12px] font-semibold text-violet-600 uppercase tracking-wider">
               <span className="h-1.5 w-1.5 rounded-full bg-violet-600 animate-pulse" />
@@ -51,12 +51,12 @@ export default function Projects() {
             </div>
 
             {/* Large Bold Heading */}
-            <h2 className="font-display text-[32px] sm:text-[40px] lg:text-[46px] font-bold leading-[1.1] tracking-[-0.03em] text-ink">
+            <h2 className="font-display text-[32px] sm:text-[38px] lg:text-[44px] font-bold leading-[1.1] tracking-[-0.03em] text-ink">
               Selected <br className="hidden sm:inline" /> Work
             </h2>
 
             {/* Supporting Subtext */}
-            <p className="text-[14px] sm:text-[14.5px] leading-relaxed text-ink-soft max-w-md">
+            <p className="text-[14px] leading-relaxed text-ink-soft max-w-md">
               High-impact production systems built from scratch — architected for extreme latency requirements, resilient infrastructure, and seamless user experiences.
             </p>
 
@@ -92,7 +92,7 @@ export default function Projects() {
           </div>
 
           {/* Pinned Bottom Caption */}
-          <div className="mt-6 pt-4 border-t border-ink/10 flex items-center justify-between font-mono text-[11px] font-semibold uppercase tracking-widest text-ink-faint">
+          <div className="pt-4 border-t border-ink/10 flex items-center justify-between font-mono text-[11px] font-semibold uppercase tracking-widest text-ink-faint">
             <span>EST. 2019</span>
             <span className="flex items-center gap-1.5 text-ink-soft">
               <Sparkles size={13} className="text-violet-600" />
