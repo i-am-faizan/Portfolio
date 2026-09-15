@@ -6,9 +6,24 @@ export interface ExperienceItem {
   responsibilities: string[];
   stack: string[];
   achievement: string;
+  highlightBadge?: string;
 }
 
 export const experience: ExperienceItem[] = [
+  {
+    id: "professional-freelancer",
+    role: "Professional Freelancer",
+    company: "Self-Employed",
+    duration: "2023 — Present",
+    highlightBadge: "Freelance & Consulting",
+    responsibilities: [
+      "Architecting and delivering bespoke full-stack applications, RESTful services, and modern web products for clients",
+      "Managing end-to-end engineering lifecycles from requirement discovery to production cloud deployment",
+      "Consulting founders and teams on MERN stack architecture, state management, and high-performance UI rendering",
+    ],
+    stack: ["React", "Next.js", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind CSS"],
+    achievement: "Delivered multiple production web products with high client satisfaction and uptime",
+  },
   {
     id: "vortexcubes-assistant-manager",
     role: "Assistant Manager",
