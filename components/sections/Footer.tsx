@@ -17,9 +17,9 @@ export default function Footer() {
     { href: getMailtoUrl(), label: "Email", icon: Mail },
   ];
   return (
-    <footer className="bg-surface px-6 pt-14 md:px-14">
+    <footer className="bg-surface px-4 pt-10 sm:px-8 sm:pt-14 md:px-14 overflow-hidden w-full max-w-full">
       <div className="mx-auto max-w-5xl">
-        <div className="flex flex-col justify-between gap-10 border-b border-ink/[0.08] pb-12 sm:flex-row">
+        <div className="flex flex-col justify-between gap-8 sm:gap-10 border-b border-ink/[0.08] pb-10 sm:pb-12 sm:flex-row">
           <div className="max-w-xs">
             <p className="font-display text-[18px] font-semibold text-ink">
               {profile.firstName}
@@ -30,7 +30,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex gap-16">
+          <div className="flex gap-10 sm:gap-16">
             <div>
               <p className="text-[12px] font-medium uppercase tracking-wide text-ink-faint">
                 Site
@@ -69,15 +69,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 py-6 text-[12px] text-ink-faint sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 py-6 text-[12px] text-ink-faint sm:flex-row text-center sm:text-left">
           <p>&copy; {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
           <p>Engineered for high performance &amp; scale</p>
         </div>
 
-        <div className="select-none overflow-hidden py-2">
+        <div className="select-none overflow-hidden py-2 max-w-full">
           <p
             className="bg-gradient-to-b from-violet-700 via-violet-500 to-surface bg-clip-text text-center font-display font-bold leading-none tracking-tight text-transparent"
-            style={{ fontSize: "clamp(64px, 15vw, 190px)" }}
+            style={{ fontSize: "clamp(36px, 14vw, 190px)" }}
             aria-hidden="true"
           >
             {profile.firstName.toUpperCase()}

@@ -190,7 +190,7 @@ export default function ProjectDetailModal({
                     <Cpu size={16} className="text-violet-400" />
                     System Architecture
                   </h4>
-                  <div className="grid grid-cols-2 gap-3 text-[12.5px]">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[12.5px]">
                     <div className="rounded-xl bg-white/5 p-3 border border-white/5">
                       <span className="font-mono text-[10.5px] font-semibold uppercase text-violet-300">Frontend</span>
                       <p className="font-medium text-white/90 mt-1">{project.architecture.frontend}</p>
@@ -254,7 +254,7 @@ export default function ProjectDetailModal({
                 </div>
 
                 {/* External Action Links */}
-                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md flex items-center justify-between gap-4">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 sm:p-5 backdrop-blur-md flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div className="text-[13px] text-white/70">
                     <span className="block font-semibold text-white">Live Project Resources</span>
                     <span>Explore source code or live deployment</span>
@@ -264,7 +264,7 @@ export default function ProjectDetailModal({
                       href={project.githubUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-[12.5px] font-medium text-white hover:bg-white/20 transition-colors"
+                      className="inline-flex items-center justify-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-[12.5px] font-medium text-white hover:bg-white/20 transition-colors flex-1 sm:flex-none"
                     >
                       <Github size={14} />
                       <span>Source</span>
@@ -273,7 +273,7 @@ export default function ProjectDetailModal({
                       href={project.liveUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-full bg-violet-600 px-4 py-2 text-[12.5px] font-semibold text-white hover:bg-violet-500 transition-colors"
+                      className="inline-flex items-center justify-center gap-1.5 rounded-full bg-violet-600 px-4 py-2 text-[12.5px] font-semibold text-white hover:bg-violet-500 transition-colors flex-1 sm:flex-none"
                     >
                       <span>Live Site</span>
                       <ArrowUpRight size={14} />

@@ -12,7 +12,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-surface px-6 py-20 md:px-14 md:py-28">
+    <section className="bg-surface px-4 py-14 sm:px-8 sm:py-20 md:px-14 md:py-28 overflow-hidden w-full max-w-full">
       <div className="mx-auto max-w-3xl">
         <FadeIn>
           <Badge>Working together</Badge>
@@ -20,7 +20,7 @@ export default function FAQ() {
         <RevealText
           as="h2"
           text="A few things people usually ask."
-          className="mt-6 font-display text-[30px] font-semibold leading-[1.2] tracking-[-0.01em] text-ink sm:text-[38px]"
+          className="mt-6 font-display text-[24px] sm:text-[38px] font-semibold leading-[1.2] tracking-[-0.01em] text-ink"
         />
 
         <div className="mt-12 divide-y divide-ink/[0.08] border-t border-ink/[0.08]">

@@ -19,9 +19,9 @@ const langColor: Record<string, string> = {
 
 export default function GithubActivity() {
   return (
-    <section className="relative overflow-hidden bg-violet-fade px-6 py-20 md:px-14 md:py-28">
+    <section className="relative overflow-hidden bg-violet-fade px-4 py-14 sm:px-8 sm:py-20 md:px-14 md:py-28 w-full max-w-full">
       <div className="relative z-10 mx-auto max-w-5xl">
-        <div className="flex flex-wrap items-end justify-between gap-6">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div>
             <FadeIn>
               <Badge tone="dark">Open source</Badge>
@@ -29,7 +29,7 @@ export default function GithubActivity() {
             <RevealText
               as="h2"
               text="Most weeks, the green squares tell the truth."
-              className="mt-6 max-w-xl font-display text-[28px] font-semibold leading-[1.25] tracking-[-0.01em] text-white sm:text-[34px]"
+              className="mt-6 max-w-xl font-display text-[24px] sm:text-[34px] font-semibold leading-[1.25] tracking-[-0.01em] text-white"
             />
           </div>
           <FadeIn delay={0.15} className="flex gap-8">

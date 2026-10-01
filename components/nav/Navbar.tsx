@@ -75,13 +75,13 @@ export default function Navbar() {
         opacity: visible || open ? 1 : 0,
       }}
       transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed top-0 left-0 right-0 z-50 px-4 pt-4 md:px-8 md:pt-6 pointer-events-auto"
+      className="fixed top-0 left-0 right-0 z-50 px-3 pt-3 sm:px-4 sm:pt-4 md:px-8 md:pt-6 pointer-events-auto w-full max-w-full"
     >
       <div
         className={clsx(
-          "mx-auto flex max-w-7xl items-center justify-between rounded-full border px-5 py-2.5 transition-all duration-500",
-          scrolled
-            ? "border-ink/10 bg-surface/80 shadow-[0_8px_30px_-12px_rgba(20,10,50,0.25)] backdrop-blur-xl"
+          "mx-auto flex w-full max-w-7xl items-center justify-between rounded-full border px-4 py-2 sm:px-5 sm:py-2.5 transition-all duration-500",
+          scrolled || open
+            ? "border-ink/10 bg-surface/90 shadow-[0_8px_30px_-12px_rgba(20,10,50,0.25)] backdrop-blur-xl"
             : "border-transparent bg-transparent"
         )}
       >
@@ -138,9 +138,9 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0, height: "auto" }}
             exit={{ opacity: 0, y: -8, height: 0 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="mx-auto mt-2 max-w-5xl overflow-hidden rounded-3xl border border-ink/10 bg-surface/95 backdrop-blur-xl md:hidden"
+            className="mx-auto mt-2 w-full max-w-5xl overflow-hidden rounded-3xl border border-ink/10 bg-surface/95 shadow-xl backdrop-blur-xl md:hidden"
           >
-            <div className="flex flex-col p-3">
+            <div className="flex flex-col p-3 space-y-1">
               {links.map((link) => (
                 <a
                   key={link.href}
@@ -151,6 +151,14 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
+              <a
+                href="#contact"
+                onClick={() => setOpen(false)}
+                className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-violet-600 px-4 py-3 text-[14px] font-semibold text-white transition-colors hover:bg-violet-700"
+              >
+                <span>Let&rsquo;s talk</span>
+                <ArrowUpRight size={15} />
+              </a>
             </div>
           </motion.div>
         )}

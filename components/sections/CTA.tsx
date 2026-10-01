@@ -10,7 +10,7 @@ export default function CTA() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-violet-fade-rev px-6 pb-28 pt-20 text-center md:px-14"
+      className="relative overflow-hidden bg-violet-fade-rev px-4 pb-20 pt-16 text-center sm:px-8 sm:pb-28 sm:pt-20 md:px-14 w-full max-w-full"
     >
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[200px] opacity-70">
         <WaveLines tone="dark" className="h-full w-full" lineCount={14} />
@@ -20,19 +20,19 @@ export default function CTA() {
         <RevealText
           as="h2"
           text="Have something worth building?"
-          className="font-display text-[34px] font-semibold leading-[1.15] tracking-[-0.01em] text-white sm:text-[44px]"
+          className="font-display text-[26px] sm:text-[44px] font-semibold leading-[1.15] tracking-[-0.01em] text-white"
         />
         <FadeIn delay={0.15}>
-          <p className="mx-auto mt-5 max-w-md text-[15px] leading-relaxed text-white/55">
+          <p className="mx-auto mt-4 sm:mt-5 max-w-md text-[14px] sm:text-[15px] leading-relaxed text-white/55">
             {profile.availability}. If you have a role or a project that needs someone who cares about both ends of the stack, I&rsquo;d like to hear about it.
           </p>
         </FadeIn>
 
-        <FadeIn delay={0.25} className="mt-9 flex flex-wrap items-center justify-center gap-4">
-          <Button href={getMailtoUrl({ email: profile.email })} variant="primary" className="!bg-white !text-ink hover:!bg-violet-100" icon={<Mail size={16} />}>
-            {profile.email}
+        <FadeIn delay={0.25} className="mt-7 sm:mt-9 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto sm:max-w-none">
+          <Button href={getMailtoUrl({ email: profile.email })} variant="primary" className="!bg-white !text-ink hover:!bg-violet-100 justify-center truncate" icon={<Mail size={16} />}>
+            <span className="truncate">{profile.email}</span>
           </Button>
-          <Button href="#projects" variant="secondary" className="!border-white/25 !text-white hover:!border-white/50" icon={<ArrowUpRight size={16} />}>
+          <Button href="#projects" variant="secondary" className="!border-white/25 !text-white hover:!border-white/50 justify-center" icon={<ArrowUpRight size={16} />}>
             View my work
           </Button>
         </FadeIn>

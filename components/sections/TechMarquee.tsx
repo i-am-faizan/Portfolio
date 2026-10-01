@@ -28,11 +28,11 @@ export default function TechMarquee() {
   const loop = [...brands, ...brands];
 
   return (
-    <section className="border-y border-ink/[0.06] bg-surface py-6 sm:py-8">
-      <div className="relative overflow-hidden">
+    <section className="border-y border-ink/[0.06] bg-surface py-6 sm:py-8 overflow-hidden w-full max-w-full">
+      <div className="relative w-full max-w-full overflow-hidden">
         {/* Soft edge fade masks */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-surface to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-surface to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 sm:w-24 bg-gradient-to-r from-surface to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 sm:w-24 bg-gradient-to-l from-surface to-transparent" />
 
         <div className="flex w-max animate-marquee items-center gap-10 sm:gap-14">
           {loop.map((brand, i) => {

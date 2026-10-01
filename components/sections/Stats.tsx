@@ -13,26 +13,26 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="relative overflow-hidden bg-violet-fade-rev px-6 py-20 md:px-14 md:py-28">
+    <section className="relative overflow-hidden bg-violet-fade-rev px-4 py-14 sm:px-8 sm:py-20 md:px-14 md:py-28 w-full max-w-full">
       <div className="pointer-events-none absolute inset-0">
         <TopoLines className="h-full w-full" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-5xl">
-        <div className="flex flex-wrap items-end justify-between gap-6">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <RevealText
             as="h2"
             text="Built to hold real traffic, not just a demo click-through."
-            className="max-w-2xl font-display text-[28px] font-semibold leading-[1.25] tracking-[-0.01em] text-white sm:text-[34px]"
+            className="max-w-2xl font-display text-[24px] sm:text-[34px] font-semibold leading-[1.25] tracking-[-0.01em] text-white"
           />
           <FadeIn delay={0.2}>
-            <Button href="#projects" variant="secondary" className="!border-white/20 !text-white hover:!border-white/50" icon={<ArrowUpRight size={16} />}>
+            <Button href="#projects" variant="secondary" className="!border-white/20 !text-white hover:!border-white/50 w-full sm:w-auto" icon={<ArrowUpRight size={16} />}>
               See the work
             </Button>
           </FadeIn>
         </div>
 
-        <div className="mt-16 grid gap-10 border-t border-white/10 pt-10 sm:grid-cols-3">
+        <div className="mt-10 sm:mt-16 grid gap-6 sm:gap-10 border-t border-white/10 pt-8 sm:pt-10 sm:grid-cols-3">
           {stats.map((stat, i) => (
             <FadeIn key={stat.label} delay={i * 0.1}>
               <Counter

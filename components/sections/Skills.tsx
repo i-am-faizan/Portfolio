@@ -20,7 +20,7 @@ export default function Skills() {
   const [openId, setOpenId] = useState<string>("");
 
   return (
-    <section id="skills" className="bg-surface px-6 py-20 md:px-14 md:py-28">
+    <section id="skills" className="bg-surface px-4 py-14 sm:px-8 sm:py-20 md:px-14 md:py-28 overflow-hidden w-full max-w-full">
       <div className="mx-auto max-w-5xl">
         <FadeIn>
           <Badge>Skills</Badge>
@@ -28,10 +28,10 @@ export default function Skills() {
         <RevealText
           as="h2"
           text="A toolkit built for shipping, not for slides."
-          className="mt-6 max-w-2xl font-display text-[30px] font-semibold leading-[1.2] tracking-[-0.01em] text-ink sm:text-[38px]"
+          className="mt-6 max-w-2xl font-display text-[24px] sm:text-[38px] font-semibold leading-[1.2] tracking-[-0.01em] text-ink"
         />
 
-        <StaggerGroup className="mt-14 grid gap-4 md:grid-cols-2">
+        <StaggerGroup className="mt-10 sm:mt-14 grid gap-4 md:grid-cols-2">
           {skillCategories.map((cat) => {
             const Icon = icons[cat.id] || Code2;
             const open = openId === cat.id;
@@ -39,7 +39,7 @@ export default function Skills() {
               <StaggerItem key={cat.id}>
                 <button
                   onClick={() => setOpenId(open ? "" : cat.id)}
-                  className="w-full rounded-card border border-ink/10 bg-white p-6 text-left shadow-card transition-colors hover:border-violet-300/60"
+                  className="w-full rounded-card border border-ink/10 bg-white p-4 sm:p-6 text-left shadow-card transition-colors hover:border-violet-300/60"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">

@@ -19,7 +19,7 @@ export default function Experience() {
   });
 
   return (
-    <section id="experience" className="bg-surface px-6 py-20 md:px-14 md:py-28">
+    <section id="experience" className="bg-surface px-4 py-14 sm:px-8 sm:py-20 md:px-14 md:py-28 overflow-hidden w-full max-w-full">
       <div className="mx-auto max-w-4xl">
         <FadeIn>
           <Badge>Experience</Badge>
@@ -27,7 +27,7 @@ export default function Experience() {
         <RevealText
           as="h2"
           text="Where I've built it before."
-          className="mt-6 max-w-2xl font-display text-[30px] font-semibold leading-[1.2] tracking-[-0.01em] text-ink sm:text-[38px]"
+          className="mt-6 max-w-2xl font-display text-[24px] sm:text-[38px] font-semibold leading-[1.2] tracking-[-0.01em] text-ink"
         />
 
         <div ref={ref} className="relative mt-16">

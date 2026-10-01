@@ -23,35 +23,35 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
       tabIndex={0}
       role="button"
       aria-label={`View case study for ${project.name}`}
-      className="group relative cursor-pointer overflow-hidden p-6 sm:p-8 lg:p-10 transition-colors duration-300 hover:bg-ink/[0.015] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/50"
+      className="group relative cursor-pointer overflow-hidden p-4 sm:p-8 lg:p-10 transition-colors duration-300 hover:bg-ink/[0.015] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/50 w-full max-w-full"
     >
       {/* Blueprint Index & Top-Right Metadata Bar */}
-      <div className="flex items-center justify-between gap-4 font-mono text-[12px] uppercase tracking-wider text-ink-faint">
+      <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-4 font-mono text-[11px] sm:text-[12px] uppercase tracking-wider text-ink-faint">
         <div className="flex items-center gap-2 text-violet-600 font-semibold">
           <span>{project.index}</span>
           <span className="text-ink/20">/</span>
           <span className="text-ink-soft">{project.category}</span>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           {project.client && (
             <span className="hidden sm:inline-block text-ink-faint">
               Client: <strong className="font-semibold text-ink-soft">{project.client}</strong>
             </span>
           )}
-          <span className="rounded-full bg-ink/[0.04] px-2.5 py-0.5 font-mono text-[11px] text-ink-soft border border-ink/[0.08]">
+          <span className="rounded-full bg-ink/[0.04] px-2.5 py-0.5 font-mono text-[10.5px] sm:text-[11px] text-ink-soft border border-ink/[0.08]">
             {project.year}
           </span>
         </div>
       </div>
 
       {/* Large Bold Project Title */}
-      <div className="mt-3 mb-6 flex items-start justify-between gap-4">
-        <h3 className="font-display text-[26px] sm:text-[34px] lg:text-[40px] font-bold leading-tight tracking-[-0.02em] text-ink transition-colors group-hover:text-violet-600">
+      <div className="mt-2 sm:mt-3 mb-4 sm:mb-6 flex items-start justify-between gap-3 sm:gap-4">
+        <h3 className="font-display text-[22px] sm:text-[34px] lg:text-[40px] font-bold leading-tight tracking-[-0.02em] text-ink transition-colors group-hover:text-violet-600">
           {project.name}
         </h3>
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink/10 bg-white/80 text-ink-soft shadow-sm transition-all duration-300 group-hover:border-violet-500 group-hover:bg-violet-600 group-hover:text-white group-hover:scale-110">
-          <ArrowUpRight size={18} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        <div className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-full border border-ink/10 bg-white/80 text-ink-soft shadow-sm transition-all duration-300 group-hover:border-violet-500 group-hover:bg-violet-600 group-hover:text-white group-hover:scale-110">
+          <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </div>
       </div>
 

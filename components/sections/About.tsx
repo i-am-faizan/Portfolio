@@ -16,7 +16,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-violet-fade px-6 py-20 md:px-14 md:py-28"
+      className="relative overflow-hidden bg-violet-fade px-4 py-14 sm:px-8 sm:py-20 md:px-14 md:py-28 w-full max-w-full"
     >
       <div className="pointer-events-none absolute inset-0 opacity-60">
         <WaveLines tone="dark" className="h-full w-full" lineCount={12} />
@@ -30,17 +30,17 @@ export default function About() {
         <RevealText
           as="h2"
           text="I care more about what breaks at 2am than what looks good in a demo."
-          className="mt-6 max-w-3xl font-display text-[30px] font-semibold leading-[1.2] tracking-[-0.01em] text-white sm:text-[38px]"
+          className="mt-6 max-w-3xl font-display text-[24px] sm:text-[38px] font-semibold leading-[1.2] tracking-[-0.01em] text-white"
         />
 
         <FadeIn delay={0.1}>
-          <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-white/60">
+          <p className="mt-4 sm:mt-6 max-w-xl text-[14px] sm:text-[15px] leading-relaxed text-white/60">
             {profile.philosophy}
           </p>
         </FadeIn>
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-2">
-          <FadeIn delay={0.05} className="rounded-card border border-white/10 bg-white/[0.04] p-7">
+        <div className="mt-10 sm:mt-16 grid gap-6 lg:grid-cols-2">
+          <FadeIn delay={0.05} className="rounded-card border border-white/10 bg-white/[0.04] p-5 sm:p-7">
             <p className="text-[13px] font-medium uppercase tracking-wide text-white/40">
               Code health
             </p>

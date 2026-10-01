@@ -29,6 +29,9 @@ html {
   background: #faf9f7;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -39,6 +42,9 @@ body {
   text-rendering: optimizeLegibility;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Framer Glow and Aura Utilities */

@@ -6,7 +6,7 @@ import { education, certifications } from "@/data/education";
 
 export default function Education() {
   return (
-    <section className="bg-surface px-6 pb-20 md:px-14 md:pb-28">
+    <section className="bg-surface px-4 pb-14 sm:px-8 sm:pb-20 md:px-14 md:pb-28 overflow-hidden w-full max-w-full">
       <div className="mx-auto max-w-4xl">
         <FadeIn>
           <Badge>Education</Badge>
@@ -14,7 +14,7 @@ export default function Education() {
         <RevealText
           as="h2"
           text="The formal part of the story."
-          className="mt-6 max-w-2xl font-display text-[30px] font-semibold leading-[1.2] tracking-[-0.01em] text-ink sm:text-[38px]"
+          className="mt-6 max-w-2xl font-display text-[24px] sm:text-[38px] font-semibold leading-[1.2] tracking-[-0.01em] text-ink"
         />
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
