@@ -14,8 +14,8 @@ import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full max-w-full overflow-x-hidden bg-surface">
-      <div className="relative w-full max-w-full overflow-x-hidden">
+    <main className="min-h-screen w-full max-w-full overflow-x-clip bg-surface">
+      <div className="relative w-full max-w-full overflow-x-clip">
         <Navbar />
         <Hero />
         <TechMarquee />

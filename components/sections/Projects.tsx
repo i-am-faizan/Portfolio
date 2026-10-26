@@ -33,16 +33,16 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative w-full max-w-full overflow-hidden border-t border-b border-ink/10 bg-surface"
+      className="relative w-full border-t border-b border-ink/10 bg-surface"
     >
       {/* Ambient background aura */}
-      <div className="pointer-events-none absolute left-1/4 top-1/3 -z-10 h-[400px] w-[400px] sm:h-[600px] sm:w-[600px] -translate-y-1/2 rounded-full bg-violet-400/10 blur-[120px] sm:blur-[140px]" />
+      <div className="pointer-events-none absolute left-1/4 top-1/3 -z-10 h-[600px] w-[600px] -translate-y-1/2 rounded-full bg-violet-400/10 blur-[140px]" />
 
       {/* Blueprint Grid Layout: Full width split container */}
-      <div className="mx-auto max-w-[1500px] grid grid-cols-1 lg:grid-cols-12 min-h-screen w-full max-w-full">
+      <div className="mx-auto max-w-[1500px] grid grid-cols-1 lg:grid-cols-12 min-h-screen">
         
         {/* Left Sticky Sidebar Column */}
-        <div className="lg:col-span-4 xl:col-span-4 border-b lg:border-b-0 lg:border-r border-ink/10 p-4 sm:p-8 lg:p-10 flex flex-col gap-6 bg-surface/50 backdrop-blur-xs lg:sticky lg:top-24 lg:self-start">
+        <div className="lg:col-span-4 xl:col-span-4 border-b lg:border-b-0 lg:border-r border-ink/10 p-6 sm:p-8 lg:p-10 flex flex-col gap-6 bg-surface/50 backdrop-blur-xs lg:sticky lg:top-24 lg:self-start lg:h-fit lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
           <div className="space-y-4">
             {/* Blueprint Eyebrow Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/5 px-3.5 py-1 font-mono text-[12px] font-semibold text-violet-600 uppercase tracking-wider">
@@ -51,12 +51,12 @@ export default function Projects() {
             </div>
 
             {/* Large Bold Heading */}
-            <h2 className="font-display text-[28px] sm:text-[38px] lg:text-[44px] font-bold leading-[1.1] tracking-[-0.03em] text-ink">
+            <h2 className="font-display text-[32px] sm:text-[38px] lg:text-[44px] font-bold leading-[1.1] tracking-[-0.03em] text-ink">
               Selected <br className="hidden sm:inline" /> Work
             </h2>
 
             {/* Supporting Subtext */}
-            <p className="text-[13.5px] sm:text-[14px] leading-relaxed text-ink-soft max-w-md">
+            <p className="text-[14px] leading-relaxed text-ink-soft max-w-md">
               High-impact production systems built from scratch — architected for extreme latency requirements, resilient infrastructure, and seamless user experiences.
             </p>
 
